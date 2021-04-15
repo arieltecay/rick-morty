@@ -37,7 +37,7 @@ const Location = () => {
       </div>
       <Table
         title="Location"
-        titleTable={["id", "Dimension", "Name", "Type", "Url"]}
+        titleTable={["id", "Dimension", "Name", "Type"]}
         bodyLotation={location}
       />
     </div>

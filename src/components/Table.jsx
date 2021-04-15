@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 const Table = ({ title, titleTable, bodyLotation, bodyEpisode }) => {
-
   return (
     <div id="box">
       <main id="center">
@@ -22,9 +21,6 @@ const Table = ({ title, titleTable, bodyLotation, bodyEpisode }) => {
                   <td>{bod.dimension}</td>
                   <td>{bod.name}</td>
                   <td>{bod.type}</td>
-                  <td>
-                    <a href={bod.url}>Detalles</a>
-                  </td>
                 </tr>
               ))}
             {bodyEpisode &&
@@ -35,9 +31,9 @@ const Table = ({ title, titleTable, bodyLotation, bodyEpisode }) => {
                   <td>{bod.episode}</td>
                   <td>{bod.name}</td>
                   <td>
-                      <Link to={`/details/${bod.id}`}>
-                          Details
-                      </Link>
+                    <Link to={`/details/${bod.id}`}>
+                      <button className="btn btn-secondary">Detalles</button>
+                    </Link>
                   </td>
                 </tr>
               ))}
