@@ -36,6 +36,8 @@ header:before {
   position: relative;
 }
 .title {
+  display: flex;
+  justify-content: center;
   padding: 10px;
   color: #82bf45;
   font-size: 5rem;
@@ -70,6 +72,12 @@ img {
   font-family: LondrinaSolid-Black;
   font-size: 30px;
   color: #82bf45;
+}
+.details-name{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 19px;
+  font-family: LondrinaSolid-Black;  
 }
 .specie {
   text-align: center;
@@ -108,13 +116,13 @@ h1 {
   font-size: 20px;
   color: black;
 }
-.enlaces{
+.enlaces {
   text-decoration: none;
   color: black;
   margin-top: 10px;
   padding: 10px;
 }
-.enlaces:hover{
+.enlaces:hover {
   background-color: rgb(76, 76, 170);
   border-radius: 25px;
   color: white;
